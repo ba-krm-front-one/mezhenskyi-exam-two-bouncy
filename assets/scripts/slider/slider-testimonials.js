@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.ba-team-slider').slick({
+	$('.ba-testimonials-slider').slick({
 		slidesToShow:1,
 		dots: true
 	});

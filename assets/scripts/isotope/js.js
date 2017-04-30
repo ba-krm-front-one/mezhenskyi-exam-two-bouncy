@@ -2,17 +2,17 @@
     function useIsotope(event) {
 
         // init Isotope
-        let isotopeGrid = new Isotope( '.ba-works', {
-            itemSelector: '.ba-grid-item',
-            percentPosition: true,
-            masonry: {
-                // use element for option
-                    columnWidth: '.ba-grid-item',
-                    gutter: 20,
-                    fitWidth: true,
+		let isotopeGrid = new Isotope( '.ba-grid', {
+			itemSelector: '.ba-grid-item',
+			percentPosition: true,
+			masonry: {
+				// use element for option
+				columnWidth: '.ba-grid-item',
+				//gutter: 5,
+				fitWidth: true,
 
-                }
-        });
+			}
+		});
         // init Isotope with jQuery
         /*let isotopeGrid = $( '.ba-works').isotope({
          itemSelector: '.ba-grid-item',
