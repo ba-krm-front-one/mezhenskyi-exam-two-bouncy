@@ -1,0 +1,26 @@
+.ba-filter {
+  margin-bottom: 56px;
+  text-align: center;
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #464646;
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 10px;
+    height: 32px;
+    margin: 0 5px;
+    &--active {
+      border-bottom: 2px solid #19bd9a;
+    }
+    &:hover {
+      color: #19bd9a;
+    }
+    &:active {
+      text-decoration: none;
+      position: relative;
+      top: 1px;
+    }
+  }
+}

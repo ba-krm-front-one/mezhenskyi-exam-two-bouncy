@@ -1,0 +1,9 @@
+@import "header.scss";
+@import "slider.scss";
+
+@media all and (max-width: 726px) {
+  .ba-team-slide-photo,
+  .ba-team-slide-content {
+    margin: 0 10%;
+  }
+}

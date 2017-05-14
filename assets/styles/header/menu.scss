@@ -1,48 +1,37 @@
 .ba-menu {
+  height: 55px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-content: flex-end;
   align-items: center;
   list-style: none;
+  position: relative;
   padding: 0;
-  margin: 0 47px 0 0;
+  margin: 0;
   float: right;
 
   &__item {
     float: left;
-    margin: 10px 26px;
+    margin: 10px 0;
   }
 
   &__link {
     display: block;
     text-decoration: none;
-    color: #fffefe;
-    font-family: $font-lato;
-    font-size: 14px;
+    color: #ffffff;
+    font-family: $primary-font;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-    position: relative;
+    line-height: 12px;
+    border: 1px solid transparent;
+    padding: 9px 16px;
+    &:hover {
+      border-radius: 16px;
+      border: 1px solid #ffffff;
+      box-shadow: 0 0 5px 2px #ffffff;
 
-    &:before {
-      display: block;
-      background-color: #ffffff;
-      position: absolute;
-      content: "";
-      left: 0;
-      right: 0;
-      top: 15px;
-      height: 3px;
-      opacity: 0;
-      transform: translateY(-15px);
-      transition: transform .2s ease-in, opacity .2s ease-in;
-    }
-
-    &:hover:before {
-      opacity: 1;
-      transform: translateY(0);
     }
   }
 }

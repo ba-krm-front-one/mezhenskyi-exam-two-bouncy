@@ -1,3 +1,35 @@
-//@import "menu.scss";
-//@import "banner.scss";
+.ba-footer {
+  padding: 55px;
+  text-align: center;
+  &__logo {
+    margin-bottom: 18px;
+  }
+  &__title {
+    color: #81868e;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 27px;
+  }
 
+}
+
+.ba-social-icon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ba-social-icon__item {
+  display: inline-block;
+  margin: 3px;
+}
+
+.ba-social-icon__link {
+  text-decoration: none;
+}
+
+.ba-social-icon__img:hover {
+  transform: scale(1.3);
+}

@@ -1,0 +1,76 @@
+.ba-slider {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+.ba-team-slide {
+  margin-bottom: 95px;
+}
+
+.ba-team-slide-photo {
+  float: left;
+  margin: 0;
+  position: relative;
+  .ba-team-overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.75);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    visibility: hidden;
+    &__link {
+      position: absolute;
+    }
+  }
+}
+
+.ba-team-slide-photo:hover .ba-team-overlay {
+  visibility: visible;
+}
+
+.ba-team-slide-content {
+  float: right;
+  text-align: right;
+  &__title {
+    color: #464646;
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 25px 25px 10px 0;
+    position: relative;
+    letter-spacing: 1.2px;
+    &:after {
+      content: '';
+      height: 42px;
+      width: 4px;
+      background-color: #19bd9a;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: -25px;
+      margin-top: 5px;
+    }
+  }
+  &__subtitle {
+    color: #81868e;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-right: 25px;
+  }
+  &__text {
+    color: #81868e;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 25px;
+    max-width: 400px;
+    letter-spacing: 1.2px;
+  }
+}

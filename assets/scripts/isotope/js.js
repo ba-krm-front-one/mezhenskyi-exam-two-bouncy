@@ -1,27 +1,14 @@
-(() => {
+;(() => {
     function useIsotope(event) {
 
-        // init Isotope
 		let isotopeGrid = new Isotope( '.ba-grid', {
-			itemSelector: '.ba-grid-item',
-			percentPosition: true,
+			itemSelector: '.ba-grid__item',
+			layoutMode: 'masonry',
 			masonry: {
-				// use element for option
-				columnWidth: '.ba-grid-item',
-				//gutter: 5,
-				fitWidth: true,
+				horizontalOrder: true
 
 			}
 		});
-        // init Isotope with jQuery
-        /*let isotopeGrid = $( '.ba-works').isotope({
-         itemSelector: '.ba-grid-item',
-         percentPosition: true,
-         masonry: {
-         // use element for option
-         columnWidth: '.ba-sizer'
-         }
-         });*/
 
         let applyFilterFromLink = (linkObject) => {
             let filterValue = linkObject.dataset.filter;
@@ -35,19 +22,19 @@
 
             applyFilterFromLink(this);
 
-            let activeBtn = document.querySelector('.ba-active');
+            let activeBtn = document.querySelector('.ba-filter__btn--active');
             if (activeBtn) {
-                activeBtn.classList.remove('ba-active');
+                activeBtn.classList.remove('ba-filter__btn--active');
             }
-            this.classList.add('ba-active');
+            this.classList.add('ba-filter__btn--active');
         };
 
-        document.querySelectorAll('.ba-filter-btn').forEach(filterBtn => {
+        document.querySelectorAll('.ba-filter__btn').forEach(filterBtn => {
             filterBtn.addEventListener( 'click', filterGrid);
         });
 
 
-        let activeBtn = document.querySelector('.ba-active');
+        let activeBtn = document.querySelector('.ba-filter__btn--active');
 
         applyFilterFromLink(activeBtn);
     }

@@ -1,0 +1,13 @@
+.ba-scroll {
+  position: absolute;
+  bottom: 77px;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: $scroll-bg;
+  &:hover {
+    box-shadow: 0 0 5px 2px #ffffff;
+  }
+}
